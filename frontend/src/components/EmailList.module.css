@@ -1,0 +1,62 @@
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.emailItem {
+  background-color: white;
+  border: 1px solid transparent; /* Loại bỏ viền xám thô cứng */
+  border-radius: 16px; /* Bo góc đồng bộ với nút bấm */
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.02); /* Đổ bóng cực nhạt */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.emailItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+/* Thư rác: Nền đỏ rất nhạt để không phá vỡ tone màu thiên nhiên */
+.spamItem {
+  background-color: #fff8f8;
+  border: 1px solid #ffecec;
+}
+
+.emailHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: #888;
+}
+
+.subject {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 0 8px 0;
+  color: #2b3a20; /* Tiêu đề màu xanh rêu */
+}
+
+.body {
+  font-size: 15px;
+  color: #555;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh; /* Căn giữa màn hình */
+  color: #888;
+  font-family: inherit;
+}
+
+.emptyState p {
+  margin-top: 16px;
+  font-size: 15px;
+}
